@@ -25,23 +25,23 @@ bot.sendMessage(msg.chat.id,"Oi tudo bem com vc?");
     
 var tchau = "tchau";
 if (msg.text.toString().toLowerCase().includes(tchau)) {
-bot.sendMessage(msg.chat.id, "Gostei de conversar com vc, tchau :)");
+bot.sendMessage(msg.chat.id, "Gostei de conversar com você! tchau :)");
 
 }
 var comprimento1 = "bom dia";
 if (msg.text.toString().toLowerCase().indexOf(comprimento1) === 0) {
-bot.sendMessage(msg.chat.id,"Obrigado(a), Bom dia pra vc tb.");
+bot.sendMessage(msg.chat.id,"Obrigado! Bom dia pra você também.");
 } 
     
 var comprimento2 = "boa tarde";
 if (msg.text.toString().toLowerCase().includes(comprimento2)) {
-bot.sendMessage(msg.chat.id, "Obrigado(a), Boa tarde pra vc tb.");
+bot.sendMessage(msg.chat.id, "Obrigado! Boa tarde pra você também.");
 
 }
 
 var comprimento3 = "boa noite";
 if (msg.text.toString().toLowerCase().includes(comprimento3)) {
-bot.sendMessage(msg.chat.id, "Obrigado(a), Boa noite pra vc tb.");
+bot.sendMessage(msg.chat.id, "Obrigado! Boa noite pra você também.");
 
 }
 }); 
