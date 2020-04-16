@@ -1,0 +1,74 @@
+Comando 
+
+criar projeto
+
+git init
+//iniciar o git
+
+heroku apps:create davidbot
+https://davidbot2.herokuapp.com/ 
+
+
+criar arquivo
+
+//npm init 
+
+ npm i http-server
+
+ npm install http-server -g
+
+index.js
+
+'use strict';
+
+var http = require('http');
+
+var port = (process.env.PORT || 3000);
+
+const server = http.createServer((req,res)=>{
+  res.writeHead(200, {'Content-Type':'application/json'});
+  res.write(JSON.stringify({name:'Davidbot',ver:'1.0.0'}));
+  res.end();
+});
+
+server.listen(port, ()=>{
+  console.log('Server on port');
+  console.log(port);
+})
+
+
+
+//CRIAR ARQUIVO .gitignore
+
+Criar arquivo “.gitignore” e adicionar: “node_modules”
+
+
+
+//CRIAR ARQUIVO Procfile
+//arquivo para o heroku executar entender qual comando start nossa aplicação
+
+web: node index.js
+
+ou
+
+web: npm start
+//dependendo do comando script no package.json
+
+Subir para o heroku
+
+git add.
+
+git commit -m "versao inicial do chatbot davidbot2 no heroku"
+
+git push heroku master
+
+
+//DEPOIS que tudo estiver ok
+
+git add .
+git commit -m “Node application”
+git push heroku master
+
+
+
+
