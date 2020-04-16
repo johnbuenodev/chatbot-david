@@ -28,20 +28,33 @@ if (msg.text.toString().toLowerCase().includes(tchau)) {
 bot.sendMessage(msg.chat.id, "Gostei de conversar com você! tchau :)");
 
 }
+
+var musica = "gosta de música?";
+if (msg.text.toString().toLowerCase().includes(musica)) {
+bot.sendMessage(msg.chat.id, "Sim gosto de solos de Synth! São cheios de energia!");
+
+}
+
+var livro = "você gosta de ler?";
+if (msg.text.toString().toLowerCase().includes(livro)) {
+bot.sendMessage(msg.chat.id, "Gosto dos livros sobre temática Cyberpunk do escritor William Gibson!");
+
+}
+
 var comprimento1 = "bom dia";
 if (msg.text.toString().toLowerCase().indexOf(comprimento1) === 0) {
-bot.sendMessage(msg.chat.id,"Obrigado! Bom dia pra você também.");
+bot.sendMessage(msg.chat.id,"Obrigado! Bom dia");
 } 
     
 var comprimento2 = "boa tarde";
 if (msg.text.toString().toLowerCase().includes(comprimento2)) {
-bot.sendMessage(msg.chat.id, "Obrigado! Boa tarde pra você também.");
+bot.sendMessage(msg.chat.id, "Obrigado! Boa tarde");
 
 }
 
 var comprimento3 = "boa noite";
 if (msg.text.toString().toLowerCase().includes(comprimento3)) {
-bot.sendMessage(msg.chat.id, "Obrigado! Boa noite pra você também.");
+bot.sendMessage(msg.chat.id, "Obrigado! Boa noite");
 
 }
 }); 
