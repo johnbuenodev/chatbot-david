@@ -70,5 +70,23 @@ git commit -m “Node application”
 git push heroku master
 
 
+instalar a biblioteca do telegram bot node
 
 
+
+https://github.com/yagop/node-telegram-bot-api
+
+install 
+
+npm install --save node-telegram-bot-api
+
+
+no telegram bot father
+
+/newbot
+
+David
+
+David_bot
+
+Colete o Tokken de acesso o resto é no codigo já 
